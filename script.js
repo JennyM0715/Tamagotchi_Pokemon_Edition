@@ -24,8 +24,9 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       //var obj = { property_1:   value_1,   // property_# may be an identifier...
      //             property_2:   value_2
     //             }; 
+    //trying to fix display
     var pet_info = {
-      name: "Stryker", 
+      name: Stryker, 
       weight: "12", 
       happiness: "5",
       discipline: "3",  //added the new behavior and set initial value
