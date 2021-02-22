@@ -15,4 +15,4 @@
         
 # Live output:
     - The link below display the outcome of the source code
-    https://jennym0715.github.io/JennyM0715.github.io_Pokemon_Tamagotchi_Edition/.
+         https://jennym0715.github.io/JennyM0715.github.io
