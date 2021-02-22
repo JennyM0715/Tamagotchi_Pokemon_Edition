@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stryker | Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    
+    
+    <header role="banner">
+      <h1>
+        This is my Giga Pet! 
+      </h1>
+    </header>
+
+    <main role="main">
+      <section class="pet-image-container" role="region">
+         <!-- Replace pet image with your own pet image -->
+        <!--Baby Shix from Pokemon Diamond--->
+        <img class="pet-image" alt="Baby Shinx" src="/image/shinx.png">
+      </section>
+      <section class="dashboard" role="region">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds (lbs)</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        
+        <!---Add a new behavior that correlates with the new button you added. 
+           You can add it below the happiness text in the html--->
+        <div>Discipline: <strong><span class="discipline"></span> </strong></div>
+        
+        <div class="button-container">
+          <button class="treat-button" onclick="treatFunction()">
+            Treat
+          </button>
+          
+          <!--the  var x = document.getElementById("treats"); inside the treatFunction() grabs this statement-->
+           <div id="treats">I love treats!!! It's all I think about!</div>
+
+           <!--Add a notification after each button press with a comment from your pet.-->
+          <button class="play-button" onclick="playFunction()">
+            Play
+          </button>
+          
+          <!--the  var x = document.getElementById("play"); inside the playFunction() grabs this statement-->
+          <div id="play">I love playing with you! Give me more attention!!!</div>
+
+           <!--Add a notification after each button press with a comment from your pet.-->
+          <button class="exercise-button" onclick="exerciseFunction()">
+            Exercise
+          </button>
+          
+          <!--the  var x = document.getElementById("exercise"); inside the exerciseFunction() grabs this statement-->
+          <div id="exercise">I don't like this! Playing is better. Let's take a nap.</div>
+
+          <!--Add a new action button--->
+           <!--Add a notification after each button press with a comment from your pet.-->
+          <button class="learn-trick-button" onclick="disciplineFunction()">
+            Do a trick
+          </button>
+          
+          <!--the  var x = document.getElementById("discipline"); inside the disciplineFunction() grabs this statement-->
+          <div id="discipline">I like learning new tricks to do!!</div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <div class="footer_class">
+        <p>Copyright 2020 Jennifer Martinez</p>
+      </div>
+    </footer>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 25px;
+    
+    /*added background color: Monte Carlo*/
+    background-color: #87d5cf;
+  }
+  
+  main {
+    display:block;
+    /*height:175px;*/
+    height: 275px;
+    
+    /*added background color */
+    background-color: white;
+    
+  }
+  
+  header {
+    border-bottom: 1px solid black;
+    
+    /*added background color: Chathams Blue */
+    /*added text-align property*/
+    background-color: #0f5673;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    
+    /*color: #000;*/
+    /*changed text color to white due to background color*/
+    /*added margin-top property*/
+    color: white;
+    margin-top: 5%;
+    
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+    
+    
+  }
+  
+.footer_class{
+  
+  margin-left: 40%;
+}
+  
+  footer a {
+    float:left;
+    margin:5px;
+  }
+  
+  .pet-image {
+    height:250px;
+  }
+  
+  .dashboard div {
+    display:block;
+  }
+  
+  .pet-image-container {
+    float:left;
+    padding:10px;
+    
+    /*added background color */
+    background-color: white;
+   
+  }
+  
+  .dashboard {
+    float:left;
+    padding:20px;
+    
+    /*wanted to make the dashboard look more aligned with the image*/
+    margin-top: 5%;
+   
+  }
+  
+  .button-container {
+    margin-top:20px;
+  }
+  
+  .button-container button {
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    font-size:15px;
+    background-color: #1e2835;
+    border-color: #404853;
+    cursor:pointer;
+    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+    color: #fafafa;
+  }
+
+
+#treats,
+#play,
+#exercise,
+#discipline {
+  
+  /*The visibility CSS property shows or hides an 
+  element or ID without changing the layout of a document.(MDN) */
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  
+  /*The z-index CSS property sets the z-order of a positioned element 
+  and its descendants or flex items. Overlapping elements with a larger
+  z-index cover those with a smaller one.(MDN)*/
+  z-index: 1;
+  left: 50%;
+  bottom: 80px;
+  top: 0;
+  margin-bottom: 40%;
+  font-size: 17px;
+}
+
+#treats.show,
+#play.show,
+#exercise.show,
+#discipline.show {
+  visibility: visible;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*WebKit extensions */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  
+  
+  /*animation: applies an animation between styles; specified as one 
+  or more single animations, separated by commas. (MDN)*/
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/*The @keyframes CSS at-rule controls the intermediate steps in a CSS 
+animation sequence by defining styles for keyframes (or waypoints) along 
+the animation sequence. This gives more control over the intermediate 
+steps of the animation sequence than transitions. (MDN)*/
+/*<custom-ident> A name identifying the keyframe list*/
+/*from
+  A starting offset of 0%.
+to
+    An ending offset of 100%.*/
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 80px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 80px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
