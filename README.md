@@ -26,5 +26,6 @@
         
 # Live output
     - The link below display the outcome of the source code
-         = https://jennym0715.github.io/Tamagotchi_Pokemon_Edition/
+
+[Output link](https://jennym0715.github.io/Tamagotchi_Pokemon_Edition/)
          
